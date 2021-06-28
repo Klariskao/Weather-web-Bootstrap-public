@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/script.js" async></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather at your place</title>
+  </head>
+
+  <body onload="renderCurrent()">
+    <div class="content">
+      <header>
+        <div class="container">
+          <div class="top">
+            <nav>
+              <h1 class="col-sm-8 col-8">Weather at your place</h1>
+
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="toggleCurrent()" tabindex="0">
+                <label class="onoffswitch-label" for="myonoffswitch">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+              </div> 
+            </nav>
+          </div>
+
+          <div class="container">
+            <nav class="navbar navbar-expand-lg">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <i class="fa fa-bars"></i>
+              </button>
+                      
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="active">Current</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="hourly.html">Hourly</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="daily.html">Daily</a>
+                  </li>
+                </ul>
+
+                <form class="form-inline">
+                  <input class="form-control mr-md-2" id="locationInputCurrent" list="dropdown" name="location" type="text" placeholder="Search for your location..">
+                  <datalist id="dropdown">
+                    <!-- dynamically created and updated search suggestions -->
+                  </datalist>
+                  <button type="button" id="searchCurrent" value="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="container weather-info brown">
+        <div class="row">
+          <div class="col mr-3 current-1" id="current1">
+            <table class="current">
+              <tr>
+                <td colspan="2" rowspan="2" style="font-size:35px" id="location"></td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td colspan="2" id="country"></td>
+              </tr>
+              <tr>
+                <td rowspan="3"><img id="currentPic" width="125px" height="125px" alt=""></td>
+                <td rowspan="2" id="temperatureCurrent" style="font-size:35px"></td>
+              </tr>
+              <tr></tr>
+              <tr>
+                <td id="description"></td>
+              </tr>
+              <tr>
+                <td class="last" id="minMax"></td>
+                <td class="last" id="feelsLike"></td>
+              </tr>    
+            </table>
+          </div>
+          
+          <div class="col current-2" id="current2">
+            <table class="current">
+              <tr>
+                  <td>UV index</td>
+                  <td id="UVindex"></td>
+              </tr>
+                  <td>Humidity</td>
+                  <td id="humidity"></td>
+              <tr>
+                  <td>Wind speed</td>
+                  <td id="windSpeed"></td>
+              </tr>
+                  <td>Wind direction</td>
+                  <td id="windDirection"></td>
+              <tr>
+                  <td colspan="2"></td>
+              </tr>
+              <tr>
+                  <td>Sunrise</td>
+                  <td id="sunrise"></td>
+              </tr>
+              <tr>
+                  <td class="last">Sunset</td>
+                  <td class="last" id="sunset"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      © Copyright 2020 Weather at your place - All Rights Reserved
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
