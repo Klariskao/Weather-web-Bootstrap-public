@@ -1,0 +1,263 @@
+body {
+    background-image: url(images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0% 15%;
+}
+
+button {
+    background: rgb(26, 26, 65);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    margin-right: 8px;
+    padding: 4px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;    
+}
+
+footer {
+    background-color: rgb(136, 149, 161);
+    border-radius: 5px;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    padding: 0%;
+    text-align: center;
+    white-space: pre;
+}
+
+p {
+    color: white;
+    margin: 2.5% 0%;
+    text-align: center;
+    white-space: pre;
+}
+
+html, body {
+    height: 100%;
+}
+
+table {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+td {
+    border-bottom: 0.5px solid rgb(136, 149, 161);
+    padding: 15%;
+    white-space: pre;
+}
+
+td.last {
+    border-bottom: none;
+}
+
+tr td.last {
+    border-bottom: none;
+}
+
+.active {
+    background-color: rgb(26, 26, 65);
+    border-radius: 5px;
+    color: white;
+}
+
+.btn {
+    background-color: rgb(26, 26, 65);
+    padding: 5px;
+} 
+
+.container {
+    padding: 0px;
+    width: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.current {
+    padding: 0px;
+    width: 100%;
+}
+
+.current-1 {
+    background-position: left;
+    background-blend-mode: overlay;
+    background-color: #0d0c18d7;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    border: solid rgb(136, 149, 161);
+    color: white;
+    empty-cells: show;
+    padding: 0px;
+}
+
+.current-2 {
+    background-position: right;
+    background-blend-mode: overlay;
+    background-color: #0d0c18d7;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    border: solid rgb(136, 149, 161);
+    color: white;
+    empty-cells: show;
+    padding: 0px;
+}
+
+.current td {
+    padding: 3%;
+    border-bottom: 1px solid  rgb(136, 149, 161);
+    border-radius: 15px;
+}
+
+.form-control.form-control{
+    height: 35px;
+    width: 220px;
+    box-shadow: 0px 0px rgb(136, 149, 161);
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.navbar {
+    background-color: rgb(136, 149, 161);
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.navbar a {
+    border-radius: 5px;
+    color: white;
+    float: left;
+    font-size: 17px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color:  rgb(26, 26, 65);
+}
+
+.navbar-toggler {
+    background-color: rgb(26, 26, 65);
+    color: rgb(136, 149, 161);
+    margin: 5px;
+    padding: 5px;
+    float: right;
+}
+
+.navbar-toggler-icon {
+    color: rgb(136, 149, 161);
+}
+
+.onoffswitch {
+    position: absolute; 
+    top: 25px;
+    right: 15%;
+    width: 124px;
+}
+
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid rgb(136, 149, 161); border-radius: 37px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 18px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "Metric";
+    padding-left: 15px;
+    background-color: rgb(26, 26, 65); color: white;
+}
+
+.onoffswitch-inner:after {
+    content: "Imperial";
+    padding-right: 15px;
+    background-color: rgb(26, 26, 65); color: white;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; width: 26px; margin: 4px;
+    height: 26px;
+    background: white;
+    position: absolute; top: 0; bottom: 0;
+    right: 90px;
+    border: 2px solid rgb(136, 149, 161); border-radius: 37px;
+    transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.row {
+    margin: 0px;
+}
+
+.top {
+    color: rgb(136, 149, 161);
+    padding: 15px 0px;
+}
+
+.weather {
+    background-image: url(images/day.jpg);
+    background-blend-mode: multiply;
+    background-color: #0d0c18a9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: solid rgb(136, 149, 161);
+    border-radius: 20px;
+    color: white;
+    float: left;
+    margin-right: 1%;
+    min-width: fit-content;
+    width: calc(95% / 6);
+}
+
+.weather:last-child {
+    margin-right: 0;
+}
+
+.weather-info {
+    margin-top: 2.5%;
+}
+
+.weather-table {
+    padding: 0px;
+    width: 100%;
+}
